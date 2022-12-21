@@ -33,7 +33,7 @@ app.use((req, res, next) => {
   }
 });
 
-const PORT = process.env.PORT || 8080;
+const PORT = 5000;
 // sends index.html
 app.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public/index.html'));
