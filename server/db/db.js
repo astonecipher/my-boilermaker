@@ -23,7 +23,7 @@ if (process.env.DATABASE_URL) {
 }
 
 const db = new Sequelize(
-  process.env.DATABASE_URL || `postgres://postgres:postgresql@bluegrass.chpjvis4r1fr.us-east-1.rds.amazonaws.com:5432/${databaseName}`,
+  process.env.DATABASE_URL || process.env.DATABASE_URL || `postgres://postgres:postgresql@bluegrass.chpjvis4r1fr.us-east-1.rds.amazonaws.com:5432/${databaseName}`,
   config
 );
 module.exports = db;
