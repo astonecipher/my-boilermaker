@@ -1,3 +1,3 @@
 database: npm run seed
-server: npm server/index.js
+server: node server/index.js
 client: npm run
